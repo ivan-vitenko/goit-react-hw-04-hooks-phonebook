@@ -33,7 +33,7 @@ function App() {
   };
 
   const deleteContact = e => {
-    this.setState(contacts.filter(contact => contact.id !== e.target.id));
+    setContacts(contacts.filter(contact => contact.id !== e.target.id));
   };
 
   return (
